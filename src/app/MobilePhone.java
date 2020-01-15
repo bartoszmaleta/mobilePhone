@@ -63,6 +63,14 @@ public class MobilePhone {
         System.out.println(contact.getName() + ", was deleted");
         return true;
     }
+    
+    public Contact queryContact(String name) {
+        int position = findContact(name);
+        if (position >= 0) {
+            return this.myContacts.get(position);
+        }
+        return null;
+    }
 
     public void printContacts() {
         System.out.println("Contact list: ");
