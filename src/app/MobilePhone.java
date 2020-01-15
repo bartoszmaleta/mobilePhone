@@ -45,4 +45,22 @@ public class MobilePhone {
         }
         return -1;
     }
+
+    public String queryContact (Contact contact) {
+        if (findContact(contact) >= 0) {
+            return contact.getName();
+        }
+        return null;
+    }
+
+    public boolean removeContact(Contact contact) {
+        int foundPosition = findContact(contact);
+        if (foundPosition < 0) {
+            System.out.println(contact.getName() + ", was not found.");
+            return false;
+        }
+        this.myContacts.remove(foundPosition);
+        System.out.println(contact.getName() + ", was deleted");
+        return true;
+    }
 }
