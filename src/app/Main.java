@@ -10,7 +10,8 @@ public class Main {
         boolean quit = false;
         startPhone();
         printMenu();
-        while (quit) {
+
+        while (!quit) {
             System.out.println("\n Enter action: --- (6) to show available action ---");
             int action = scanner.nextInt();
             scanner.nextLine();
@@ -126,11 +127,11 @@ public class Main {
     }
 
     private static void printMenu() {
-        System.out.println("\n Available actions: \npress");
+        System.out.println("\nAvailable actions: \npress");
         System.out.print("0 - to shutdown\n" + "1 - to print contacts\n" + "2 - to add a new contact"
                 + "3 - to update existing contact" + "4 - to remove an existing contact\n"
                 + "5 - query if an existing contact exist\n" + "6 - to print a list of available actions.");
-        System.out.println("Choose your action: ");
+        System.out.println("\nChoose your action: ");
     }
 
 }
