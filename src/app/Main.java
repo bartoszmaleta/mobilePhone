@@ -12,7 +12,7 @@ public class Main {
         printMenu();
 
         while (!quit) {
-            System.out.println("\n Enter action: --- (6) to show available action ---");
+            System.out.println("\nEnter action: --- (6) to show available action ---");
             int action = scanner.nextInt();
             scanner.nextLine();
 
@@ -128,9 +128,9 @@ public class Main {
 
     private static void printMenu() {
         System.out.println("\nAvailable actions: \npress");
-        System.out.print("0 - to shutdown\n" + "1 - to print contacts\n" + "2 - to add a new contact"
-                + "3 - to update existing contact" + "4 - to remove an existing contact\n"
-                + "5 - query if an existing contact exist\n" + "6 - to print a list of available actions.");
+        System.out.print("0 - to shutdown\n" + "1 - to print contacts\n" + "2 - to add a new contact\n"
+                + "3 - to update an existing contact\n" + "4 - to remove an existing contact\n"
+                + "5 - to query if an existing contact exist\n" + "6 - to print a list of available actions.");
         System.out.println("\nChoose your action: ");
     }
 
